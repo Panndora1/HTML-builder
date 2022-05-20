@@ -14,5 +14,14 @@
   "devDependencies": {
     "@types/node": "^16.11.4",
     "eslint": "^7.32.0"
+  },
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Panndora1/HTML-builder.git"
+  },
+  "keywords": [],
+  "dependencies": {
+    "nodemon": "^2.0.16"
   }
 }
