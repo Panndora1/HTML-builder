@@ -12,6 +12,7 @@ fs.readdir(pathFile, {withFileTypes: true}, (err, files) => {
     files.forEach(file => {
         let pathFiles = path.join(__dirname, 'secret-folder', file.name)
         
+         if(file.isFile() == true) {
             fs.stat(pathFiles, (err, stats) => {
                 if(err) {
                     throw err
@@ -23,7 +24,7 @@ fs.readdir(pathFile, {withFileTypes: true}, (err, files) => {
                
                 console.log(`${name} - ${ext.slice(1, ext.length)} - ${weight}kb`)
             });
-        
+         }
     })
 });
 
